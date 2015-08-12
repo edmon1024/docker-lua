@@ -11,7 +11,7 @@ RUN apt-get update && \
     apt-get clean && \
     mkdir /usr/bin/lua && \
     cd /usr/bin/lua && \
-    echo "${LUA_HASH} lua-${LUA_VERSION}.tar.gz" > lua-${LUA_VERSION}.md5 && \
+    echo "${LUA_HASH}  lua-${LUA_VERSION}.tar.gz" > lua-${LUA_VERSION}.md5 && \
     curl -R -O http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz && \
     md5sum -c lua-${LUA_VERSION}.md5 && \
     tar zxf lua-${LUA_VERSION}.tar.gz && \

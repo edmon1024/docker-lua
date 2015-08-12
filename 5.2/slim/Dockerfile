@@ -12,7 +12,7 @@ RUN apt-get update && \
     mkdir /usr/src/lua && \
     cd /usr/src/lua && \
     curl -fSLO http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz && \
-    echo "${LUA_HASH} lua-${LUA_VERSION}.tar.gz" | md5sum -c - && \
+    echo "${LUA_HASH}  lua-${LUA_VERSION}.tar.gz" | md5sum -c - && \
     tar zxf lua-${LUA_VERSION}.tar.gz && \
     make -C lua-${LUA_VERSION} linux test && \
     make -C lua-${LUA_VERSION} install && \
